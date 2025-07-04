@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Hotel | Welcome</title>
+
+   
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+       
+        #header {
+            background-color: white;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+           
+        
+        }
+
+        .logo {
+            font-family: 'Times New Roman', serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        #navigation {
+            float: right;
+            margin-top: 5px;
+        
+        }
+
+        #navigation a {
+            margin-left: 20px;
+            color: #333333;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+
+       
+        #hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bed.jpg');
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding-top: 30px;
+        }
+
+        #hero h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 50px;
+            padding-top: 150px;
+            margin-bottom: 10px;
+        }
+
+        #hero a {
+            background-color: #816a4a;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+      
+        #about, #rooms, #gallery, #contact {
+            padding: 60px 20px;
+            background-color: #816a4a;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', serif;
+            font-size: 35px;
+            text-align: center;
+        }
+        
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: center;
+            
+        }
+        
+       
+        #rooms {
+            background-color:beige;
+            border-radius: 2%;
+
+        }
+        
+        .room-table {
+            width: 100%;
+            margin-top: 30px;
+            border-spacing: 20px;
+        }
+
+        .room-cell {
+            width: 30%;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px #eee;
+            text-align: center;
+            vertical-align: top;
+            padding-bottom: 20px;
+            border: none;
+            background-color: antiquewhite;
+        }
+        
+        .room-cell img {
+            width: 75%;
+            height: 300px;
+        }
+         .room-cell img:hover{
+            cursor: pointer;
+            transform: translateY(-10px); 
+           
+         }
+
+        .room-cell h3 {
+            font-family: 'Times New Roman', serif;
+            color: burlywood;
+        }
+        
+        .room-cell p {
+             padding: 0 15px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+        
+      
+        #gallery {
+            text-align: center;
+        }
+
+        #gallery img {
+            height: 400px;
+            width: 450px;
+            margin: 10px;
+            border: none;
+
+        }
+        #gallery img:hover{
+           cursor: pointer;
+           transform: translateY(10px);
+        }
+        
+   
+        #contact {
+            background-color: beige;
+            text-align: center;
+        }
+        
+        #contact b {
+            color: #000;
+            background-color: #ccc;
+        }
+
+        #contact a {
+            color: #816a4a;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            padding: 25px;
+        }
+       .back_to_top {
+            display: inline-block;
+            background-color: #816a4a;
+            color:white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 15px; /* Adds space between button and copyright text */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+         .back_to_top:hover {
+            background-color: #6a583a; /* A slightly darker shade for hover */
+            transform: translateY(-3px); /* Lifts the button slightly on hover */
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        
+        <a href="#hero" class="logo">The Grand Serenity</a>
+        <div id="navigation">
+            <a href="#about">About</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="hero">
+        <h1>Find cheap and quality rooms</h1>
+        <br>
+        <!-- <a href="#rooms">Explore Our Rooms ></a> -->
+    </div>
+
+    <div id="about">
+        <h2>Welcome to The Grand Hotel</h2>
+        <br>
+        <p>The Grand Hotel offers a unique blend of modern and natural beauty. Our mission is to provide an unforgettable experience, where every detail is crafted for your comfort and relaxation.</p>
+    </div>
+
+    <div id="rooms">
+        <h2>Our Rooms</h2>
+        <table class="room-table">
+            <tr>
+                <td class="room-cell">
+                    <img src="bed.jpg" alt="Deluxe King Room">
+                    <h3>Small</h3>
+                    <p>A spacious room with a king-sized bed, city views.</p>
+                    <p class="price">From Rs.500 / night</p>
+                </td>
+                <td class="room-cell">
+                    <img src="balcony.jpg" alt="Ocean View Suite">
+                    <h3>Medium</h3>
+                    <p> This room features a private balcony, a separate living area.</p>
+                    <p class="price">From Rs.1000 / night</p>
+                </td>
+                <td class="room-cell">
+                    <img src="pool.jpg" alt="The Presidential Penthouse">
+                    <h3>Large</h3>
+                    <p>A private rooftop terrace,along with.</p>
+                    <p class="price">From Rs.1500 / night</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="gallery">
+        <h2>Photo Gallery</h2>
+        <br><br>
+        <img src="pol.jpg" alt="Pool Area">
+        <img src="rest.jpg" alt="Hotel Restaurant">
+        <img src="lobby.jpg" alt="Lobby">
+        <br>
+        <img src="park.jpg" alt="Park Center">
+        <img src="exterior.jpg" alt="Hotel Exterior at Dusk">
+        <img src="room balcony.jpg" alt="View from a room balcony">
+    </div>
+
+    <div id="contact">
+        <h2>Contact Us & Location</h2>
+        <br>
+        <p><b>Address:</b> Somewhere I used to, Know</p>
+        <p><b>Phone:</b> (123) 456-7890</p>
+        <p><b>Email:</b> <a href="mailto:reservations@grand.com">reservations@grand.com</a></p>
+    </div>
+
+    <div id="footer">
+            <a href="#top" class="back_to_top">top</a>
+    
+        
+        <p>© 2024 The Grand Hotel. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
